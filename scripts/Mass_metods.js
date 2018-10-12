@@ -333,54 +333,70 @@ for (var num in obj) {
 //     }
 //  }
 /////////////////////////////////////////////////////////
-var arr = [-1, 2, 3, 4, 56, 12, -4, -32, 2];
-var newArr = [];
-for (var i = 0; i < arr.length; i++) {
-    if (isNumberInRange(arr[i])) {
-        newArr.push(arr[i]);
-    }
-}
+// var arr = [-1, 2, 3, 4, 56, 12, -4, -32, 2];
+// var newArr = [];
+// for (var i = 0; i < arr.length; i++) {
+//     if (isNumberInRange(arr[i])) {
+//         newArr.push(arr[i]);
+//     }
+// }
+//
+// //console.log(newArr) ;
+//
+// function isNumberInRange(num) {
+//     if (num == 13) {
+//         return true;
+//     }
+//     return false;
+// }
+//
+//
+// function getDigitsSum(num) {
+//     var num = String(num);
+//     var sum = 0;
+//     for (var i = 0; i < num.length; i++) {
+//         sum += Number(num[i]);
+//     }
+//     return sum;
+// }
+//
+// function Fun(num) {
+//     var result = 0;
+//     for (var i = 0; i < 2018; i++) {
+//         if (getDigitsSum(i) == 13) {
+//             console.log(i);
+//         }
+//     }
+// }
+//
+// function isEven(num) {
+//     if (num % 2 == 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// var newArr = [];
+//
+// for(var i=0; i<arr.length;i++){
+//     if(isEven(arr[i])){
+//         newArr.push(arr[i])
+//     }
+// }
+// console.log(newArr);
+/////////////////////////////////////////////////////////
+var str= "string";
 
-//console.log(newArr) ;
-
-function isNumberInRange(num) {
-    if (num == 13) {
-        return true;
-    }
-    return false;
-}
-
-
-function getDigitsSum(num) {
-    var num = String(num);
-    var sum = 0;
-    for (var i = 0; i < num.length; i++) {
-        sum += Number(num[i]);
-    }
-    return sum;
-}
-
-function Fun(num) {
-    var result = 0;
-    for (var i = 0; i < 2018; i++) {
-        if (getDigitsSum(i) == 13) {
-            console.log(i);
+function ucfirst(string){
+    result="";
+    string = string.split('');
+    for(var i=0; i<string.length; i++){
+        if(i==0){
+            var str = string[i];
+            result+ =str
         }
+        result.push(string[i]);
     }
+    return result;
 }
-
-function isEven(num) {
-    if (num % 2 == 0) {
-        return true;
-    } else {
-        return false;
-    }
-}
-var newArr = [];
-
-for(var i=0; i<arr.length;i++){
-    if(isEven(arr[i])){
-        newArr.push(arr[i])
-    }
-}
-console.log(newArr);
+console.log(ucfirst(str));
