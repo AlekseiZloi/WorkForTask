@@ -386,17 +386,30 @@ for (var num in obj) {
 // console.log(newArr);
 /////////////////////////////////////////////////////////
 var str= "string";
-
-function ucfirst(string){
-    result="";
-    string = string.split('');
-    for(var i=0; i<string.length; i++){
-        if(i==0){
-            var str = string[i];
-            result+ =str
-        }
-        result.push(string[i]);
-    }
-    return result;
+var strOne ="var_text_hello";
+var newArr = [];
+var arr = str.split(' ');
+for (var i = 0; i < arr.length; i++) {
+    newArr.push(ucfirst(arr[i]));
 }
-console.log(ucfirst(str));
+var newStr = newArr.join(' ');
+//alert(newStr);
+
+function ucfirst(str) {
+    return str[0].toUpperCase() + str.substr(1);
+}
+function delHyphen(str){
+    str=str.split('_');
+    var newStr= "";
+    for(var i=0; i<str.length;i++){
+        if(i==0){
+            newStr+=str[i];
+        }else{newStr += ucfirst(str[i])}
+    }
+    return newStr;
+}
+console.log(delHyphen(strOne));
+
+function inArray(str, arr){
+    
+}
