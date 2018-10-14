@@ -385,31 +385,67 @@ for (var num in obj) {
 // }
 // console.log(newArr);
 /////////////////////////////////////////////////////////
-var str= "string";
-var strOne ="var_text_hello";
-var newArr = [];
-var arr = str.split(' ');
-for (var i = 0; i < arr.length; i++) {
-    newArr.push(ucfirst(arr[i]));
-}
-var newStr = newArr.join(' ');
-//alert(newStr);
-
-function ucfirst(str) {
-    return str[0].toUpperCase() + str.substr(1);
-}
-function delHyphen(str){
-    str=str.split('_');
-    var newStr= "";
-    for(var i=0; i<str.length;i++){
-        if(i==0){
-            newStr+=str[i];
-        }else{newStr += ucfirst(str[i])}
+// var str= "string";
+// var strOne ="var_text_hello";
+// var newArr = [];
+// var arr = str.split(' ');
+// for (var i = 0; i < arr.length; i++) {
+//     newArr.push(ucfirst(arr[i]));
+// }
+// var newStr = newArr.join(' ');
+// //alert(newStr);
+//
+// function ucfirst(str) {
+//     return str[0].toUpperCase() + str.substr(1);
+// }
+// function delHyphen(str){
+//     str=str.split('_');
+//     var newStr= "";
+//     for(var i=0; i<str.length;i++){
+//         if(i==0){
+//             newStr+=str[i];
+//         }else{newStr += ucfirst(str[i])}
+//     }
+//     return newStr;
+// }
+// console.log(delHyphen(strOne));
+/////////////////////////////////////////////////////////
+// var arr = [1, 2, 3, 4, 5, 6];
+//
+//function outputArr(arr) {
+//     var result = arr.shift();
+//     console.log(result);
+//     if (arr.length != 0) {
+//         outputArr(arr);
+//     }
+// }
+//outputArr(arr);
+/////////////////////////////////////////////////////////
+// function getFigure(num) {
+//     return String(num).split("");
+// }
+// function getNumber(arr){
+//     var sum = 0;
+//     for(var i=0; i<arr.length; i++){
+//         sum += Number(arr[i]);
+//     }
+//     return sum;
+// }
+// function getNumAndFig(num){
+//     return getNumber(getFigure(num));
+// }
+//
+// function CheckNum(num){
+//     var sumnam= getNumAndFig(num);
+//      if(sumnam>=9){
+//          sumnam = CheckNum(sumnam);
+//      }
+//      return sumnam;
+// }
+// console.log(CheckNum(134567));
+/////////////////////////////////////////////////////////
+function columOne(num){
+    for(var i =1; i<=num;i++){
+        console.log(i);
     }
-    return newStr;
-}
-console.log(delHyphen(strOne));
-
-function inArray(str, arr){
-    
 }
