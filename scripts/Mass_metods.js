@@ -449,3 +449,5 @@ function columOne(num){
         console.log(i);
     }
 }
+//columOne(100);
+ function
