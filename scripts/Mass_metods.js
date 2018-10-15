@@ -450,4 +450,3 @@ function columOne(num){
     }
 }
 //columOne(100);
- function
